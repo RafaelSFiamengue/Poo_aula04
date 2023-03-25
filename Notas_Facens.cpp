@@ -1,7 +1,7 @@
 // Biblioteca usada
 #include <iostream>
-//Biblioteca usada
-#include <stdlib.h>
+//Biblioteca matematica usada
+#include <cmath>
 //Biblioteca usada
 using namespace std;
 //Programa Principal
