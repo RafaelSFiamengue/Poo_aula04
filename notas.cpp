@@ -8,6 +8,10 @@ using namespace std;
 int main() {
     // Variavel para as notas dos semestres
     double nota1, nota2, nota3, nota4, media;
+    //Variavel para continuar
+    char continuar = 'y';
+    //Comando para repetição 
+    while (continuar == 'y' || continuar == 'Y') {
     //Imprime para o usuario a pergunta do valor da nota1
     cout << "Digite a nota do primeiro semestre: ";
     //Leitura do valor da nota1
@@ -34,10 +38,19 @@ int main() {
     if (media >= 7) {
         // Imprime a informação que o usuario foi aprovado
         cout << "Parabens, você foi aprovado" << endl;
-    //Se a media for menor que 7 ele foi reprovado
-    }else{
-        //Imprime a informação que ele foi reprovado
-        cout << "Eita, você foi reprovado" << endl;
+    //Se a media for menor que 7 e maior ou igual a 5
+    }else if (media >= 5 && media < 7) {
+        //Imprime a informação que ele vai para a substitutiva
+        cout << "Quase, faça a substitutiva" << endl;
+        //Se a media for menor que 5
+    }else {
+        //Imprime a informação que ele esta reprovado
+        cout << "Infelizmente você foi reprovado" << endl;
+    }
+    //Pergunta se o usuario quer continuar
+    cout << "Deseja continuar? y/n: ";
+    //Leitura do valor continuar para o programa repetir
+    cin >> continuar;
     }
 
     return 0;
